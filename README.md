@@ -1,5 +1,6 @@
 # dad-app
 Hackday Project
+
 My project idea for the Hackday is to create a daddy app. The app can be used by dads that want to participate in parenting but get stuck sometimes. For example, they forget when to feed, how to feed and how much to feed. Because of the limited amount of time that is given the only features that I wish to include for now, are;
 -	User should be able to sign up.
 -	User should be able to login.
