@@ -9,5 +9,5 @@ My project idea for the Hackday is to create a daddy app. The app can be used by
 -	User should be able to get instructions on how to do the task. This will be featured in a ‘help’ section, where I’ll connect with Youtube by using the external Youtube API to showcase instruction videos on ‘how to bottle feed your baby’.
 
 Future features
+
 The daddy app can contain many features. Think off, add several things to the schedule, such as; change diaper, give a snack, baby naps and set alarms for all these elements. Add baby photo’s and send notifications to a partner account member when the task is done could be included as well. 
-![image](https://user-images.githubusercontent.com/122681891/230381135-b33e178c-6836-48d6-958d-0d56970f71b7.png)
