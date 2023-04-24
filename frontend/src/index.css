@@ -1,0 +1,256 @@
+/* GENERAL*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
+
+body {
+  background: #f6f6f5;
+  margin: 0;
+  font-family: "Montserrat";
+  --primary: #3dbeb6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #fff;
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  color: #297297;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 20px; /* add margin to the right of the links */
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  margin-left: auto;
+  color: #129e89;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border: none;
+}
+
+.logout-button:hover {
+  color: rgb(200, 200, 200);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+footer {
+  background: #fbf9f9;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-p {
+  margin: 0;
+}
+
+.baby-profile {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+}
+
+@media (min-width: 768px) { 
+  .baby-profile {
+    grid-template-columns: 2fr 1fr; 
+    gap: 100px;
+  }
+}
+
+/* TaskDetails */
+
+.task-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-title {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  color: var(--primary);
+  }
+  
+  .task-time {
+  margin: 10px 0 2px 0;
+  font-size: 0.9em;
+  color: #224657;
+  }
+  
+  .task-quantity {
+  margin: 2px 0 0 0;
+  font-size: 0.9em;
+  color: #224657;
+  }
+  
+  .task-details .delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  background: #fff;
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  color: rgb(75, 75, 75);
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  }
+  
+  .task-details .delete-btn:hover {
+  background: #e1e1e1;
+  }
+
+  .checkBox {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgb(157, 153, 153);
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    margin: 15px
+  }
+  
+  .checkBox:checked {
+    background-color: #0fc598;
+    border-color: #0fc598;
+  }
+
+/* add task form */
+.add-task {
+  background-color: #90cfd2;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  height: 360px;
+}
+
+.add-task h3 {
+  font-size: 1.3em;
+  margin-top: 0;
+  text-align: center;
+  color: #0d3a54;
+}
+
+.add-task label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.add-task input[type="text"],
+.add-task input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.add-task input[type="text"]:focus,
+.add-task input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.add-task button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #1aa08c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #147f6f;
+}
+
+.add-task__error {
+  color: #fa4e42;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* youtubeApi */
+.video-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.goToBabyBtn{
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #1aa08c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-babyProfile {
+  text-decoration: none;
+}
+
+.goToBabyBtn:hover {
+  background: #056051;
+  }
